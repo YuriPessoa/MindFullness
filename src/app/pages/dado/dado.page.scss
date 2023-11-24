@@ -1,0 +1,147 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #023047; 
+    background-color: #62e057;
+
+    
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #5782e0, #ffffffab); /* Substitua as cores desejadas */
+}
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    background-color: #e7e7e7;
+    border-radius: 7px;
+    padding: 40px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    gap: 5px
+}
+
+.areaLogin img {
+    width: 420px;
+}
+
+.formLogin h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.3em;
+}
+
+.formLogin p {
+    display: inline-block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+.cadastro {
+    margin-top: 5%;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    font-family: Outfit;
+    word-wrap: break-word
+}
+
+
+ion-input {
+    background-color: #e7e7e7;
+}
+
+
+.login {
+    left: 84px;
+    top: 50px;
+    position: absolute;
+    color: black;
+    font-size: 24px;
+    font-family: Outfit;
+    font-weight: 600;
+    word-wrap: break-word
+}
+
+.head {
+    height: 110px;
+}
+
+.info {
+    left: 84px;
+    top: 80px;
+    position: absolute;
+    color: black;
+    font-size: 15px;
+    font-family: Outfit;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    font-family: Outfit;
+    font-weight: 520;
+}
+
+
+.linha {
+    width: 70%;
+    height: 2px;
+    background-color: rgb(255, 208, 0);
+    margin: 0px 0;
+}
+
+.usuario {
+    color: #333333;
+    font-size: 16px;
+    font-family: Quicksand;
+    font-weight: 700;
+    line-height: 26px;
+    word-wrap: break-word;
+    margin-top: 10% ;
+}
+
+
+.retangulo {
+    margin-top: 2%;
+    padding: 1px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
+}
+
+
+.imagem2 {
+    width: 40px; 
+    height: auto;
+    position: absolute;
+    left: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+h2{
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 350;
+    
+}

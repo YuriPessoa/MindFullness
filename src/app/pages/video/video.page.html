@@ -1,0 +1,98 @@
+<ion-content [fullscreen]="true">
+
+  <div class="box"></div>
+  <div class="head"> 
+  <div class="texto">
+    <div class="mindfullness">
+      <span
+        style="color: black; font-size: 45px; font-family: Outfit; font-weight: 500; word-wrap: break-word">Mind</span>
+      <span
+        style="color: #00B2FF; font-size: 45px; font-family: Outfit; font-weight: 700; word-wrap: break-word">Fullness</span>
+    </div>
+    </div>
+
+
+  <ion-card>
+    <img alt="Silhouette of mountains" src="assets/img1.jpg" />
+    <ion-card-header>
+      <ion-card-title>Não procrastine seus estudos </ion-card-title>
+      <ion-card-subtitle>Se você continuar deixando tudo para depois, isso vai te prejudicar muito!</ion-card-subtitle>
+      <P>⠀</P>
+      <a href="https://youtu.be/g7AVs95_Hmo?si=U0IIwMJ0zLjyUY70" target="_blank">
+        <button>Assistir ao Vídeo</button>
+      </a>
+    </ion-card-header>
+  </ion-card>
+
+
+  <ion-card>
+    <img alt="Silhouette of mountains" src="assets/img6.jpg" />
+    <ion-card-header>
+      <ion-card-title>Qualidade de vida e saúde mental</ion-card-title>
+      <ion-card-subtitle>Você tem se sentindo mal ultimamente? Aqui está algumas dicas de como você pode começar a 
+        melhorar na sua própria casa mudando algumas coisas na sua rotina.</ion-card-subtitle>
+      <P>⠀</P>
+      <a href="https://youtu.be/g7AVs95_Hmo?si=U0IIwMJ0zLjyUY70" target="_blank">
+        <button>Assistir ao Vídeo</button>
+      </a>
+    </ion-card-header>
+  </ion-card>
+
+
+  <ion-card>
+    <img alt="Silhouette of mountains" src="assets/img5.jpg" />
+    <ion-card-header>
+      <ion-card-title>Meditação</ion-card-title>
+      <ion-card-subtitle>5 minutos de meditação para aliviar a ansiedade e estresse      </ion-card-subtitle>
+      <P>⠀</P>
+      <a href="https://youtu.be/gxXZCl4vA-g?si=amsxFVJg8Zgq5fqH" target="_blank">
+        <button>Assistir ao Vídeo</button>
+      </a>
+    </ion-card-header>
+  </ion-card>
+
+
+  <ion-card>
+    <img alt="Silhouette of mountains" src="assets/img4.jpg" />
+    <ion-card-header>
+      <ion-card-title>Melhore seu foco! </ion-card-title>
+      <ion-card-subtitle>7 exercícios para você melhorar o foco nos trabalhos e nos estudos</ion-card-subtitle>
+      <P>⠀</P>
+      <a href="https://youtu.be/8h81u6cUcZc?si=7ubRnSUz_s34Wf0u" target="_blank">
+        <button>Assistir ao Vídeo</button>
+      </a>
+    </ion-card-header>
+  </ion-card>
+</div>
+
+</ion-content>
+
+
+
+
+<ion-tab-bar slot="bottom" style="background-color: #ffffff">
+  <ion-tab-button tab="calendar" [routerLink]="['/calendario/']" style="background-color: #ffffff">
+    <ion-icon name="calendar"></ion-icon>
+    Calendário
+  </ion-tab-button>
+
+  <ion-tab-button tab="happy" [routerLink]="['/diario/']" style="background-color: #ffffff">
+    <ion-icon name="happy"></ion-icon>
+    Relatório
+  </ion-tab-button>
+
+  <ion-tab-button tab="person-circle" [routerLink]="['/tarefa/']" style=" background-color: #ffffff">
+    <ion-icon name="person-circle"></ion-icon>
+    Tarefas
+  </ion-tab-button>
+
+  <ion-tab-button tab="home" [routerLink]="['/dado/']" style="background-color: #ffffff">
+    <ion-icon name="home"></ion-icon>
+    Dados
+  </ion-tab-button>
+
+  <ion-tab-button tab="video" [routerLink]="['/video/']" style="color: #5782e0; background-color: #ffffff">
+    <ion-icon name="play-circle-outline"></ion-icon>
+    Vídeos
+  </ion-tab-button>
+</ion-tab-bar>

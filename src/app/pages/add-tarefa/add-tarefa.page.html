@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defautHref="/tarefa"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Voltar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content> 
+<div class="texto">
+  <P>⠀</P>
+  <div class="mindfullness">
+    <span
+      style="color: black; font-size: 45px; font-family: Outfit; font-weight: 500; word-wrap: break-word">Mind</span>
+    <span
+      style="color: #5782e0; font-size: 45px; font-family: Outfit; font-weight: 700; word-wrap: break-word">Fullness</span>
+  </div>
+
+  <div>
+    <span
+      style="color: rgb(174, 174, 174); font-size: 25px; font-family: Outfit; font-weight: 500; word-wrap: break-word">Tarefa</span>
+  </div> 
+</div>
+
+
+  <div class="form"> 
+
+  <form [formGroup]="formGroup" (ngSubmit)="salvar()">
+    <ion-item>
+      <ion-label position="stacked">Descrição</ion-label>
+      <ion-input type="text" formControlName="descricao"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Data de término</ion-label>
+      <br>
+      <ion-datetime formControlName="dataTermino" name="dataTermino" presentation="date">
+
+      </ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-toggle formControlName="situacao" color="primary">Tarefa concluída</ion-toggle>
+    </ion-item>
+
+    <ion-button type="submit" expand="block" color="primary" [disabled]="!formGroup.
+    valid">Adicionar</ion-button>
+  </form>
+  </div>
+</ion-content>

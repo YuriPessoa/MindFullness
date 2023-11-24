@@ -1,0 +1,90 @@
+.retangulo {
+    margin-top: 8%;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
+}
+
+.color{
+    background-color: rgb(226, 220, 220);
+}
+
+.box{
+    height: 40px;
+}
+.body {
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.mindfullness {
+    text-align: center;
+    float: center;
+    align-items: baseline;
+}
+
+
+.fonte {
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-family: Poppins;
+    font-weight: 300;
+
+}
+
+.title {
+
+margin-left: 30%;   
+ font-size: 20px;
+    color: white;
+}
+
+.description {
+    font-size: 14px;
+    color: white;
+}
+
+
+.imagem1 {
+    width: 70px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    position: absolute;
+    left: 10px; /* Ajuste a posição da imagem para o lado esquerdo */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.imagem2 {
+    width: 65px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    position: absolute;
+    left: 10px; /* Ajuste a posição da imagem para o lado esquerdo */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.imagem3 {
+    width: 60px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    position: absolute;
+    left: 10px; /* Ajuste a posição da imagem para o lado esquerdo */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.imagem4 {
+    width: 70px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    position: absolute;
+    left: 10px; /* Ajuste a posição da imagem para o lado esquerdo */
+    top: 50%;
+    transform: translateY(-50%);
+}

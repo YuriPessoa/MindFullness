@@ -1,0 +1,35 @@
+<ion-content [fullscreen]="true" >
+  
+  <div class="container">
+    <div class="banner">
+      <div class="imgPessoa"><img src="assets/capa.jpg" /></div>
+    </div>
+    <div class="card">
+      <ion-grid>
+        <ion-card class="cardAlinhamento">
+          <ion-grid [fixed]="true">
+            <ion-row>
+
+              <div class="titulo">
+                <h1>Bem vindo!</h1>
+              </div>
+
+              <div class="logo"><img src="assets/logoN2.jpg" /></div>
+
+            </ion-row>
+          </ion-grid>
+
+          <div class="texto">
+            <ion-card-content>Bem-vindo ao MindFullness, o melhor app para ajudar na sua organização pessoal e na sua saúde mental </ion-card-content>
+          </div>
+
+          <ion-button expand="block" [routerLink]="['/cadastro/']">Sou novo</ion-button>
+
+          <div class="button"><h5><a [routerLink]="['/login/']" style="text-decoration:none">Já tenho uma conta</a></h5></div>
+        </ion-card>
+
+      </ion-grid>
+    </div>
+  </div>
+
+</ion-content>

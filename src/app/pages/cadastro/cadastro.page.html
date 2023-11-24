@@ -1,0 +1,48 @@
+  <div class="page">
+
+
+  <div class="head">
+    <div class="login"> Página de Cadastro</div>
+    <div class="info">Bem vindo ao MindFullness!</div>
+    <div><img class="user" src="assets/user.png" /></div>
+    <div><img class="img" src="assets/fundo.png" /></div>
+  </div>
+
+
+
+    <form [formGroup]="formGroup" (ngSubmit)="salvar()" class="formLogin">
+      <div class="title">
+        <span style="color: black">Mind</span>
+        <span style="color: #00B2FF">Fullness</span>
+      </div>
+
+      <p>Digite os seus dados de acesso no campo abaixo.</p>
+
+
+      <div class="itens">
+
+        <ion-input type="text" name="nome" formControlName="nome" label="Nome" labelPlacement="stacked"></ion-input>
+
+        <ion-input type="text" name="idade" formControlName="idade" label="Idade" labelPlacement="stacked"></ion-input>
+
+        <ion-input type="email" name="email" formControlName="email" label="E-mail"
+          labelPlacement="stacked"></ion-input>
+
+        <ion-input type="password" name="senha" formControlName="senha" label="Senha" labelPlacement="stacked"></ion-input>
+
+      <ion-button type="submit" expand="block" color="primary" [disabled]="!formGroup.
+    valid">Salvar</ion-button>
+</div>
+
+<div class="cadastro">
+  <span [routerLink]="['/login/']" style="color: #636363; font-weight: 400">Já possui uma conta? </span>
+  <span [routerLink]="['/login/']" style="color: #0C1F22;  font-weight: 600">Clique aqui!</span>
+</div>
+
+    </form>
+
+   
+    </div>
+
+    <div class="box"></div>
+

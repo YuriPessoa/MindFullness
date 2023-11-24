@@ -1,0 +1,82 @@
+<ion-content [fullscreen]="true">
+
+  <div class="fundo">
+    <p>⠀</p>
+    <div class="texto">
+      <div class="mindfullness">
+        <span style="  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            color: black; font-size: 45px; font-family: Outfit; font-weight: 500; word-wrap: break-word">Mind</span>
+        <span
+          style="  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            color: #5782e0; font-size: 45px; font-family: Outfit; font-weight: 700; word-wrap: break-word">Fullness</span>
+      </div>
+
+      <div>
+        <span
+          style="color:  rgb(255, 208, 0);; font-size: 30px; font-family: Outfit; font-weight: 600; word-wrap: break-word">Calendário</span>
+      </div>
+    </div>
+
+    <div class="ano"
+      style="color: #3f3f3f; font-size: 20px; font-family: Outfit; font-weight: 600; word-wrap: break-word">
+      2023
+    </div>
+
+    <div class="mes"
+      style="color: #3f3f3f; font-size: 30px; font-family: Outfit; font-weight: 600; word-wrap: break-word">
+      Novembro
+    </div>
+
+
+    <div class="calendar">
+      <div class="day" *ngFor="let humorDiario of humorDiarios" [routerLink]="['/diario/', humorDiario.idDiario]">
+        <img class="icone" src="{{humorDiario.icone}}" alt="{{humorDiario.tipoHumor}}">
+        <p class="data">{{humorDiario.dataHumorDiario | date : 'MM' }}</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="container">
+
+  <ion-button  expand="block" color="primary" [routerLink]="['/ajuda/']">Você precisa de ajuda?</ion-button>
+</div> 
+
+
+</ion-content>
+
+
+
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom" style="background-color: #ffffff">
+        <ion-tab-button tab="calendar" [routerLink]="['/calendario/']"
+          style="color: #5782e0; background-color: #ffffff">
+          <ion-icon name="calendar"></ion-icon>
+          Calendário
+        </ion-tab-button>
+
+        <ion-tab-button tab="happy" [routerLink]="['/diario/']" style="background-color: #ffffff">
+          <ion-icon name="happy"></ion-icon>
+          Relatório
+        </ion-tab-button>
+
+        <ion-tab-button tab="person-circle" [routerLink]="['/tarefa/']" style=" background-color: #ffffff">
+          <ion-icon name="person-circle"></ion-icon>
+          Tarefas
+        </ion-tab-button>
+
+        <ion-tab-button tab="home" [routerLink]="['/dado/']" style="background-color: #ffffff">
+          <ion-icon name="home"></ion-icon>
+          Dados
+        </ion-tab-button>
+
+        <ion-tab-button tab="video" [routerLink]="['/video/']" style=" background-color: #ffffff">
+          <ion-icon name="play-circle-outline"></ion-icon>
+          Vídeos
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>

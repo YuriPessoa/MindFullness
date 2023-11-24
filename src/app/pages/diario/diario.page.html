@@ -1,0 +1,124 @@
+<ion-content [fullscreen]="true">
+  <p>⠀</p>
+  <div class="texto">
+    <div class="mindfullness">
+      <span
+        style="color: black; font-size: 45px; font-family: Outfit; font-weight: 500; word-wrap: break-word">Mind</span>
+      <span
+        style="color: #00B2FF; font-size: 45px; font-family: Outfit; font-weight: 700; word-wrap: break-word">Fullness</span>
+    </div>
+
+    <p>⠀</p>
+  </div>
+
+  <ng-template [ngIf]="isDiarioAntigo" [ngIfElse]="diarioNovo">
+    <div class="emocoes">
+      <div style="color: #3f3f3f; font-size: 20px; font-family: Outfit; font-weight: 600; word-wrap: break-word">
+        A emoção registrada no dia {{diario.dataDiario}} foi {{humor.tipoHumor}}.
+      </div>
+
+      
+    </div>
+
+
+  </ng-template>
+
+  <ng-template #diarioNovo>
+    <div class="emocoes">
+      <div style="color: #3f3f3f; font-size: 20px; font-family: Outfit; font-weight: 600; word-wrap: break-word">
+        Como você está se sentindo?
+      </div>
+
+      <div class="calendario">
+        <div class="day">
+          <img src="assets/triste.jpg" (click)="registrarEmocao('pessimo')">
+        </div>
+        <div class="day">
+          <img src="assets/feliz.jpg" (click)="registrarEmocao('ruim')">
+        </div>
+        <div class="day">
+          <img src="assets/neutro.jpg" (click)="registrarEmocao('neutro')">
+        </div>
+        <div class="day">
+          <img src="assets/contente.jpg" (click)="registrarEmocao('bom')">
+        </div>
+        <div class="day">
+          <img src="assets/alegre.jpg" (click)="registrarEmocao('otimo')">
+        </div>
+      </div>
+    </div>
+    <p>⠀</p>
+  </ng-template>
+
+  <ng-template [ngIf]="!isDiarioAntigo">
+
+    <form [formGroup]="formGroup" (ngSubmit)="salvar()">
+      <ion-item>
+        <ion-textarea class="texto" placeholder="Escreva como está sendo seu dia!" [autoGrow]="true"
+          formControlName="descricao">
+        </ion-textarea>
+        <ion-button type="submit" expand="block" color="primary" [disabled]="!formGroup.valid">Salvar</ion-button>
+      </ion-item>
+    </form>
+  </ng-template>
+
+  <ion-list>
+    <br>
+    <br>
+    <div class="emocoes">
+      <div style="color: #3f3f3f; font-size: 20px; font-family: Outfit; font-weight: 600; word-wrap: break-word">
+        Descrições do diário
+      </div>
+    </div>
+
+    <ion-item-sliding *ngFor="let descricao of descricaos">
+      <ion-item>
+        <ion-label>
+          <p class="name">
+            <b>
+              {{descricao.descricao}}
+            </b>
+          </p>
+        </ion-label>
+      </ion-item>
+
+      <ng-template [ngIf]="!isDiarioAntigo">
+        <ion-item-options side="start">
+          <ion-item-option (click)="excluir(descricao)" color="danger">Excluir</ion-item-option>
+        </ion-item-options>
+        <ion-item-options side="end">
+          <ion-item-option (click)="editar(descricao)" color="warning">Editar</ion-item-option>
+        </ion-item-options>
+      </ng-template>
+
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>
+
+
+<ion-tab-bar slot="bottom" style="background-color: #ffffff">
+  <ion-tab-button tab="calendar" [routerLink]="['/calendario/']" style="background-color: #ffffff">
+    <ion-icon name="calendar"></ion-icon>
+    Calendário
+  </ion-tab-button>
+
+  <ion-tab-button tab="happy" [routerLink]="['/diario/']" style="color: #5782e0;  background-color: #ffffff">
+    <ion-icon name="happy"></ion-icon>
+    Relatório
+  </ion-tab-button>
+
+  <ion-tab-button tab="person-circle" [routerLink]="['/tarefa/']" style=" background-color: #ffffff">
+    <ion-icon name="person-circle"></ion-icon>
+    Tarefas
+  </ion-tab-button>
+
+  <ion-tab-button tab="home" [routerLink]="['/dado/']" style="background-color: #ffffff">
+    <ion-icon name="home"></ion-icon>
+    Dados
+  </ion-tab-button>
+
+  <ion-tab-button tab="video" [routerLink]="['/video/']" style=" background-color: #ffffff">
+    <ion-icon name="play-circle-outline"></ion-icon>
+    Vídeos
+  </ion-tab-button>
+</ion-tab-bar>

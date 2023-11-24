@@ -1,0 +1,50 @@
+<ion-content [fullscreen]="true">
+  <div class="color">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">cuidado</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+<div class="body"> 
+
+  <div class="box"></div>
+  <div class="mindfullness">
+
+    <span
+      style="color: black; font-size: 45px; font-family: Outfit; font-weight: 500; word-wrap: break-word">Mind</span>
+    <span
+      style=" color: #00B2FF; font-size: 45px; font-family: Outfit; font-weight: 700; word-wrap: break-word">Fullness</span>
+  </div>
+
+
+
+  <div [routerLink]="['/tarefa/']" class="retangulo" style="background-color: rgb(103, 169, 223);">
+    <img class="imagem1" src="assets/tarefa.png" alt="Imagem" />
+    <p class="fonte">Tarefa </p>
+  </div>
+
+
+  <div [routerLink]="['/diario/']" class="retangulo" style="background-color: rgb(103, 169, 223);">
+    <img class="imagem2" src="assets/diario.png" alt="Imagem" />
+    <p class="fonte">Diário </p>
+  </div>
+
+
+  <div [routerLink]="['/calendario/']" class="retangulo" style="background-color: rgb(103, 169, 223);">
+    <img class="imagem4" src="assets/calendario.png" alt="Imagem" />
+    <p class="fonte">⠀⠀Calendário </p>
+  </div>
+
+  <div [routerLink]="['/dado/']" class="retangulo" style="background-color: rgb(103, 169, 223);">
+    <img class="imagem3" src="assets/dado.png" alt="Imagem" />
+    <p class="fonte">⠀⠀⠀Meus Dados </p>
+  </div>
+
+</div>
+
+  <div class="box"></div>
+
+</div>
+</ion-content>

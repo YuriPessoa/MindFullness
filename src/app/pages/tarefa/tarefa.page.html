@@ -1,0 +1,67 @@
+<ion-content>
+
+
+  <div>
+    <div class="texto">
+      <P>⠀</P>
+      <div class="mindfullness">
+        <span
+          style="color: black; font-size: 45px; font-family: Outfit; font-weight: 500; word-wrap: break-word">Mind</span>
+        <span
+          style="color: #00B2FF; font-size: 45px; font-family: Outfit; font-weight: 700; word-wrap: break-word">Fullness</span>
+      </div>
+
+      <div class="tarefa">
+        <span>Minhas Tarefas</span>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="add">
+    <span [routerLink]="['/add-tarefa/']" style="color: #FFC600;  font-weight: 600">ADICIONAR TAREFA</span>
+  </div>
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let tarefa of tarefas">
+      <ion-item [routerLink]="['/add-tarefa/', tarefa.idTarefa]" detail>
+        <ion-label>
+          <h2> <ion-icon name="list-outline" [color]="tarefa.situacao ? 'success' : 'danger'"></ion-icon>
+            {{tarefa.descricao}} ({{tarefa.dataTermino | date : 'dd/MM'}}) </h2>
+        </ion-label>
+      </ion-item>
+      <ion-item-options side="start">
+        <ion-item-option (click)="excluir(tarefa)" color="danger">Excluir</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+
+</ion-content>
+
+<ion-tab-bar slot="bottom" style="background-color: #ffffff">
+  <ion-tab-button tab="calendar" [routerLink]="['/calendario/']" style="background-color: #ffffff">
+    <ion-icon name="calendar"></ion-icon>
+    Calendário
+  </ion-tab-button>
+
+  <ion-tab-button tab="happy" [routerLink]="['/diario/']" style="background-color: #ffffff">
+    <ion-icon name="happy"></ion-icon>
+    Relatório
+  </ion-tab-button>
+
+  <ion-tab-button tab="person-circle" [routerLink]="['/tarefa/']" style="color: #5782e0;  background-color: #ffffff">
+    <ion-icon name="person-circle"></ion-icon>
+    Tarefas
+  </ion-tab-button>
+
+  <ion-tab-button tab="home" [routerLink]="['/dado/']" style="background-color: #ffffff">
+    <ion-icon name="home"></ion-icon>
+    Dados
+  </ion-tab-button>
+
+  <ion-tab-button tab="video" [routerLink]="['/video/']" style=" background-color: #ffffff">
+    <ion-icon name="play-circle-outline"></ion-icon>
+    Vídeos
+  </ion-tab-button>
+</ion-tab-bar>
