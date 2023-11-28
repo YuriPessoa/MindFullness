@@ -5,3 +5,4 @@ ansiedade e estresse possam ser diminuídos.
 
 Link da documentação atualizada: 
 file:///C:/Users/Usuario/Downloads/Documenta%C3%A7%C3%A3o%20Mindfulness%20(1).pdf
+docs/Documentação Mindfullness.pdf
