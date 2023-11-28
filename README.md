@@ -4,5 +4,5 @@ segura e confiável, de modo que o ele possa ter uma visão geral de como está 
 ansiedade e estresse possam ser diminuídos. 
 
 Link da documentação atualizada: 
-file:///C:/Users/Usuario/Downloads/Documenta%C3%A7%C3%A3o%20Mindfulness%20(1).pdf
+[file:///C:/Users/Usuario/Downloads/Documenta%C3%A7%C3%A3o%20Mindfulness%20(1).pdf](https://github.com/YuriPessoa/MindFullness/blob/master/docs/Documenta%C3%A7%C3%A3o%20Mindfulness.pdf)https://github.com/YuriPessoa/MindFullness/blob/master/docs/Documenta%C3%A7%C3%A3o%20Mindfulness.pdf
 
